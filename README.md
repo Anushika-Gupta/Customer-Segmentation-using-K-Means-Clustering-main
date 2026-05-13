@@ -1,75 +1,49 @@
+# customer segmentation system
 
-# 🛍️ Customer Segmentation using K-Means (Streamlit App)
+## overview
 
-This project performs **customer segmentation** using **K-Means Clustering**, and builds an interactive **Streamlit web app** for visual analysis and business insights.
+segmentai is an ai-powered customer segmentation and business analytics platform developed using machine learning techniques such as the elbow method and k-means clustering algorithm. the system analyzes customer purchasing behavior, spending habits, income patterns, and engagement characteristics to automatically classify customers into meaningful groups.
 
-It helps businesses understand different types of customers like:
-- 🟥 High-income, high-spending customers
-- 🟦 Low-income, low-spending customers
-- 🟪 Impulsive buyers
-- 🟩 Cautious but wealthy customers
+the project helps businesses transform raw customer data into actionable business insights through intelligent clustering, interactive dashboards, and visual analytics.
 
----
+# features
 
-## 📌 Objective
+- csv dataset upload
+- automatic data preprocessing
+- elbow method visualization
+- k-means clustering
+- pca-based cluster visualization
+- interactive analytics dashboard
+- customer persona generation
+- ai-based business recommendations
+- search & filter functionality
+- downloadable reports
+- premium dark ui dashboard
 
-🎯 To segment customers into useful clusters using machine learning and visualize results dynamically.  
-The tool allows:
-- Marketing teams to design **targeted strategies**
-- Businesses to **personalize offers**
-- Analysts to **explore patterns** in customer behavior
-## LIVE : https://customer-segmentation-using-kmeans-clustering.streamlit.app/
+Link: https://customer-segmentation-k-means.streamlit.app/
 
----
+# system workflow
 
-## 🚀 Features
+```text
+customer dataset upload
+          ↓
+data preprocessing
+          ↓
+elbow method analysis
+          ↓
+optimal cluster detection
+          ↓
+k-means clustering
+          ↓
+pca visualization
+          ↓
+analytics dashboard
+          ↓
+ai business recommendations
+```
+# machine learning techniques used
+elbow method - used to determine the optimal number of customer clusters by calculating within cluster sum of squares (wcss).
 
-✅ Upload your own dataset  
-✅ Select any 2 numeric features (Age, Income, Spending Score, etc.)  
-✅ Elbow Method to choose the best number of clusters  
-✅ K-Means clustering  
-✅ Dynamic scatter plot with cluster colors  
-✅ Smart report with cluster-wise insights  
-✅ Styled table showing cluster means  
-✅ Business-friendly auto descriptions
+k-means clustering - groups customers into different segments based on similarities in behavior and demographic data.
 
----
-
-## 🧪 Technologies Used
-
-| Tool / Library     | Purpose                             |
-|--------------------|--------------------------------------|
-| Python             | Main programming language            |
-| Pandas             | Data analysis & cleaning             |
-| Matplotlib         | Elbow graph                          |
-| Seaborn            | Cluster visualization                |
-| Scikit-learn       | K-Means clustering                   |
-| Streamlit          | UI for interactive web app           |
-
----
-
-## 📊 Dataset Overview
-
-We used `Mall_Customers.csv`, containing:
-
-| Column                | Description                         |
-|------------------------|-------------------------------------|
-| CustomerID            | Unique customer ID                  |
-| Gender                | Male / Female                       |
-| Age                   | Age of customer                     |
-| Annual Income (k$)    | Income in thousands of dollars      |
-| Spending Score (1–100)| Score assigned by the shopping mall |
-
----
-
-## 🖼️ How It Works
-
-1. Upload the CSV file (or use the default one)
-2. Select 2 numeric features for clustering
-3. See the Elbow Method graph to pick the best number of clusters (K)
-4. Visualize customers in color-coded clusters
-5. Read auto-generated cluster descriptions
-6. View a styled summary table for insights
-
----
-
+pca (principal component analysis) - used for dimensionality reduction and interactive 2d/3d visualization of customer clusters.
